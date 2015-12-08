@@ -29,7 +29,7 @@
 }
 
 html {
-    padding: 20px;
+    padding: 30px;
     font-size: 16px;
 }
 
@@ -248,4 +248,21 @@ tt {
     font-family: Courier, monospace;
     padding: 2px 4px 0px 4px;
     font-size: 0.9em;
+}
+
+pre code {
+    border: none;
+}
+
+pre {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  margin: 20px 0;
+  padding: 8px;
+  border-radius: 3px;
+  text-align: left;
+  overflow: auto;
+  word-wrap: normal;
 }
