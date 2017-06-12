@@ -1,33 +1,3 @@
-@font-face {
-    font-family: "Atlas Grotesk Web", -apple-system, "Helvetica Neue", "Lucida Grande", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Lyon Text Web", -apple-system, "Helvetica Neue", "Lucida Grande", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Lyon Text Web", -apple-system, "Helvetica Neue", "Lucida Grande", sans-serif;
-    font-style: italic;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Lyon Text Web", -apple-system, "Helvetica Neue", "Lucida Grande", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Lyon Text Web", -apple-system, "Helvetica Neue", "Lucida Grande", sans-serif;
-    font-style: italic;
-    font-weight: bold;
-}
-
 html {
     padding: 30px;
     font-size: 16px;
@@ -36,7 +6,7 @@ html {
 body {
     font-family: "Lyon Text Web", -apple-system, "Helvetica Neue", "Lucida Grande", sans-serif;
     color: rgb(51, 51, 51);
-    line-height: 1.6;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -55,74 +25,57 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Atlas Grotesk Web", -apple-system, "Helvetica Neue", "Lucida Grande", sans-serif;
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-    cursor: text;
+    font-family: 'SF Pro Display', -apple-system;
 }
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
-    text-decoration: none;
-}
-h1 tt,
-h1 code {
-    font-size: inherit;
-}
-h2 tt,
-h2 code {
-    font-size: inherit;
-}
-h3 tt,
-h3 code {
-    font-size: inherit;
-}
-h4 tt,
-h4 code {
-    font-size: inherit;
-}
-h5 tt,
-h5 code {
-    font-size: inherit;
-}
-h6 tt,
-h6 code {
-    font-size: inherit;
-}
-h1 {
-    padding-bottom: .3em;
-    font-size: 2.25em;
-    line-height: 1.2;
-    border-bottom: 1px solid #eee;
-}
-h2 {
-    padding-top: .5em;
-    padding-bottom: .3em;
-    font-size: 1.35em;
-    line-height: 1.225;
-    border-bottom: 1px solid #eee;
-}
+
+h1,
+h2,
 h3 {
-    text-transform: uppercase;
-    font-size: 0.8em;
-    line-height: 1.43;
+    font-weight: 700;
 }
+
+h1 {
+    font-size: 2.2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.5em;
+    border-bottom: 0.5px solid #eee;
+}
+
+/* h2 immediately following h1 */
+h1 + h2 {
+    padding-top: 0em;
+}
+
+h2 {
+    font-size: 1.7em;
+    padding-top: 0.3em;
+    padding-bottom: 0.25em;
+    border-bottom: 0.5px solid #eee;
+}
+
+
+h3 {
+    font-size: 1.3em;
+    padding-top: 0.2em;
+    padding-bottom: 0;
+}
+
+h2 + h3 {
+    padding-top: 0;
+}
+
 h4 {
+    font-weight: bolder;
     text-transform: uppercase;
     font-size: 1.25em;
 }
 h5 {
+    font-weight: bolder;
     text-transform: uppercase;
     font-size: 1em;
 }
 h6 {
+    font-weight: bolder;
     text-transform: uppercase;
     font-size: 1em;
     color: #777;
